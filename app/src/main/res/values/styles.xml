@@ -1,0 +1,53 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Colours in app -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorWhite</item>
+    <item name="colorControlActivated">@color/material_green_700</item>
+    <item name="colorControlHighlight">#f44336</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:button">@style/button_radius</item>
+  </style>
+
+  <style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="SplashTheme.FullScreen" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowBackground">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+  <!--Button radius-->
+  <style name="button_radius" parent="android:style/Widget.Button">
+    <item name="android:textColor">@color/colorWhite</item>
+    <item name="android:background">@drawable/ripple_button</item>
+  </style>
+
+  <!--Line in the view aka divider-->
+  <style name="Divider">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">?android:attr/listDivider</item>
+  </style>
+
+  <style name="counterText">
+    <item name="android:textColor">@color/colorOk</item>
+  </style>
+
+  <style name="counterOverride">
+    <item name="android:textColor">#ff0000</item>
+  </style>
+
+</resources>

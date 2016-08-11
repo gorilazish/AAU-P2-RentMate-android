@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+  <android.support.design.widget.TextInputLayout
+      android:id="@+id/email_text_input_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      app:counterOverflowTextAppearance="@style/counterOverride"
+      app:counterTextAppearance="@style/counterText">
+
+    <EditText
+        android:id="@+id/user_email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_action_e_mail"
+        android:hint="@string/user_email_edit_text"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@+id/password_edit_text"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"/>
+  </android.support.design.widget.TextInputLayout>
+
+  <android.support.design.widget.TextInputLayout
+      android:id="@+id/pass_text_input_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      app:counterOverflowTextAppearance="@style/counterOverride"
+      app:counterTextAppearance="@style/counterText">
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:hint="@string/hint_password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"/>
+  </android.support.design.widget.TextInputLayout>
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="30dp"
+      android:layout_gravity="center_horizontal"
+      android:text=""/>
+
+  <Button
+      android:id="@+id/log_in_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      android:layout_marginTop="15dp"
+      android:background="@drawable/ripple_button"
+      android:text="@string/log_in_button"
+      android:textColor="#ffffff"/>
+
+</LinearLayout>
